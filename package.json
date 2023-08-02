@@ -1,0 +1,24 @@
+{
+  "name": "webpack-sourcemap-extractor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "while : ; do node index.js $URL ; inotifywait -e close_write -q *.js; done"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^18.17.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "source-map": "^0.7.4"
+  }
+}
